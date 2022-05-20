@@ -19,7 +19,7 @@ void solution()
     // gap Strats
     for (int gap = 1; gap <= n; gap++) {
         for (int i = 0; i < n; i++) {
-            if (i + gap) {
+            if (i + gap < n) {
                 if (s[i] == s[i + gap]) {
                     if (gap == 1) {
                         dp[i][i + gap] = true; 
